@@ -1,0 +1,40 @@
+.linker {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    font-size: 14;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blogs {
+    width: 400px;
+    height: 200px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;    
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.block_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+footer {
+    text-align: end;
+}

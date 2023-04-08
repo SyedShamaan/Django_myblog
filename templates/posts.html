@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'posts.css' %}">
+        <title>
+            Blog - {{posts.title}}
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                Shamaan's blog
+            </h1>
+        </div>
+        <div class="blog">
+            <h2>                    
+                {{posts.title}}
+            </h2>
+            <p>
+                {{posts.body}}
+            </p>
+            <footer>
+                {{posts.created_at}}
+            </footer>
+        </div>
+    </body>
+</html>

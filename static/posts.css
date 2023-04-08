@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: left;
+    color: blue;
+}
+
+.blog {
+    text-align: justify;
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: end;
+}

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <title>
+        Blog
+    </title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <body>
+        <div class="header">
+            <h1>
+                Shamaan's blog
+            </h1>
+        </div>
+        <div class="block_container">
+            {% for post in posts reversed %}
+            <div class="blogs">
+                <a href="/post/{{post.id}}" class="linker">
+                    <h3>
+                        {{post.title}}
+                    </h3>
+                    <p>
+                        {{post.body | truncatewords:25}}
+                    </p>
+                </a>
+                <footer>
+                    {{post.created_at}}
+                </footer>
+            </div>
+            {% endfor %}
+        </div>    
+    </body>
+</html>
